@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 6% auto;
+    
+}
+.searchBox{
+    display: flex;
+    width: 95%;
+    margin: 2rem auto;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+.searchBar{
+    width: 80%;
+    padding: 0.25rem 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 15px;
+}
+
+.searchBtn{
+    background-color: #eb6e4b;
+    color: #fff;
+    width: 4rem;
+    padding: 0.25rem 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 15px;
+}
+
+.currWeather{
+    width: 95%;
+    padding: 2rem;
+    display: grid;
+    grid-template-areas:'c1 . c3'
+                        'c2 . c3'
+                        'c2 . c3' ;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
+.LocAndDate{
+    grid-area: c1;
+}
+
+.loc{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.date{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.weather{
+    grid-area: c2;
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+}
+.icoWeather img{
+    width: 150px;
+}
+.description{
+    font-size: 1.25rem;
+    text-align: center;
+
+}
+
+.currTemp{
+    grid-area: c3;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+.currTemp h1{
+    font-size: 12rem;
+    font-weight: 200;
+}
+.currTemp p{
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+.weatherInfo{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+
+.card{
+    background-color: aliceblue;
+    min-width: 11rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.cardTitle{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-weight: 300;
+}
+
+.cardTitle img{
+    width: 1.5rem;
+}
+.cardValue{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
