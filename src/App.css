@@ -101,16 +101,17 @@
 
 .weatherInfo{
     display: flex;
-    margin: auto;
+    margin: 2rem auto;
     flex-wrap: wrap;
     width: 95%;
+    gap: 0.25rem;
 }
 
 
 .card{
     background-color: aliceblue;
     min-width: 11rem;
-    margin: 2rem auto;
+    margin: 0.5rem auto;
     padding: 1rem;
     border-radius: 15px;
 }
@@ -128,4 +129,183 @@
 .cardValue{
     font-size: 1.25rem;
     font-weight: 400;
+}
+
+@media (max-width: 1024px){
+    .container{
+        width: 75%; 
+    }
+    .searchBox{
+        width: 96%;
+        gap: 0.5rem;
+    }
+    .searchBar{
+        width: 85%;
+        font-size: 1rem;
+    }
+    .searchBtn{
+        font-size: 1rem;
+    }
+    
+    
+    .currWeather{
+        width: 96%;
+        padding: 1rem;
+        display: grid;
+        grid-template-areas:'c1 c1 .'
+                            'c2 . c3 '
+                            'c2 . c3' ;
+    }
+    
+    
+    .loc{
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+    
+    .date{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .icoWeather img{
+        width: 120px;
+    }
+    .description{
+        font-size: 1rem;
+        text-align: center;
+    
+    }
+    
+    .currTemp{
+        gap: 5px;
+        text-align: center;
+    }
+    .currTemp h1{
+        font-size: 6rem;
+        font-weight: 200;
+    }
+    .currTemp p{
+        padding-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+
+    .weatherInfo{
+        width: 96%;
+        margin: 1rem auto;
+        gap: 0.25rem;
+    }
+    .card{
+        background-color: aliceblue;
+        min-width: 10rem;
+        margin: 0.5rem auto;
+        padding: 1rem;
+        border-radius: 15px;
+    }
+    
+    .cardTitle{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    
+    .cardTitle img{
+        width: 1.5rem;
+    }
+    .cardValue{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+}
+@media (max-width: 480px){
+    .container{
+        width: 90%; 
+    }
+    .searchBox{
+        width: 96%;
+        gap: 0.5rem;
+    }
+    .searchBar{
+        width: 85%;
+        font-size: 1rem;
+    }
+    .searchBtn{
+        font-size: 1rem;
+    }
+    
+    
+    .currWeather{
+        width: 96%;
+        padding: 1rem;
+        display: grid;
+        grid-template-areas:'c1 c1 .'
+                            'c2 . c3'
+                            '. . c3' ;
+    }
+    
+    
+    .loc{
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+    
+    .date{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .icoWeather img{
+        width: 100px;
+    }
+    .description{
+        font-size: 1rem;
+        text-align: center;
+    
+    }
+    
+    .currTemp{
+        gap: 5px;
+        text-align: center;
+    }
+    .currTemp h1{
+        font-size: 5rem;
+        font-weight: 200;
+    }
+    .currTemp p{
+        padding-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+
+    .weatherInfo{
+        width: 96%;
+        margin: 1rem auto;
+        gap: 0.25rem;
+    }
+    .card{
+        background-color: aliceblue;
+        min-width: 11rem;
+        margin: 0.5rem auto;
+        padding: 1rem;
+        border-radius: 15px;
+    }
+    
+    .cardTitle{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    
+    .cardTitle img{
+        width: 1.5rem;
+    }
+    .cardValue{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
 }
