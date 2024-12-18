@@ -1,29 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", serif;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin: 6% auto;
-    
+    margin: 2% auto;
+
 }
-.searchBox{
+
+.errorMsg {
+    text-align: center;
+    margin-top: 4rem;
+    color: #5c6772;
+}
+
+.errorMsg h1 {
+    font-size: 6rem;
+}
+
+.errorMsg h2 {
+    font-size: 2rem;
+}
+
+.searchBox {
     display: flex;
     width: 95%;
     margin: 2rem auto;
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    
+
 }
-.searchBar{
+
+.searchBar {
     width: 80%;
     padding: 0.25rem 1rem;
     font-size: 1.1rem;
@@ -31,7 +47,7 @@
     border-radius: 15px;
 }
 
-.searchBtn{
+.searchBtn {
     background-color: #eb6e4b;
     color: #fff;
     width: 4rem;
@@ -41,65 +57,71 @@
     border-radius: 15px;
 }
 
-.currWeather{
+.currWeather {
     width: 95%;
     padding: 2rem;
     display: grid;
-    grid-template-areas:'c1 . c3'
-                        'c2 . c3'
-                        'c2 . c3' ;
+    grid-template-areas: 'c1 . c3'
+        'c2 . c3'
+        'c2 . c3';
     justify-items: center;
     align-items: center;
     margin: auto;
-    background-color: aliceblue;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(219deg, #8BC6EC 0%, #9599E2 100%);
+    box-shadow: -15px 15px 30px rgba(74, 75, 75, 0.692);
     border-radius: 15px;
 }
 
-.LocAndDate{
+.LocAndDate {
     grid-area: c1;
 }
 
-.loc{
+.loc {
     font-size: 2.5rem;
     font-weight: 600;
 }
 
-.date{
+.date {
     font-size: 1.5rem;
     font-weight: 300;
 }
 
-.weather{
+.weather {
     grid-area: c2;
     display: flex;
     flex-direction: column;
     justify-self: left;
 }
-.icoWeather img{
+
+.icoWeather img {
     width: 150px;
 }
-.description{
+
+.description {
     font-size: 1.25rem;
     text-align: center;
 
 }
 
-.currTemp{
+.currTemp {
     grid-area: c3;
     display: flex;
     gap: 10px;
     text-align: center;
 }
-.currTemp h1{
+
+.currTemp h1 {
     font-size: 12rem;
     font-weight: 200;
 }
-.currTemp p{
+
+.currTemp p {
     padding-top: 2rem;
     font-size: 2rem;
 }
 
-.weatherInfo{
+.weatherInfo {
     display: flex;
     margin: 2rem auto;
     flex-wrap: wrap;
@@ -108,203 +130,222 @@
 }
 
 
-.card{
+.card {
     background-color: aliceblue;
     min-width: 11rem;
     margin: 0.5rem auto;
     padding: 1rem;
     border-radius: 15px;
+    box-shadow: -15px 15px 30px rgba(74, 75, 75, 0.692);
 }
 
-.cardTitle{
+.cardTitle {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
     font-weight: 300;
 }
 
-.cardTitle img{
+.cardTitle img {
     width: 1.5rem;
 }
-.cardValue{
+
+.cardValue {
     font-size: 1.25rem;
     font-weight: 400;
 }
 
-@media (max-width: 1024px){
-    .container{
-        width: 75%; 
+@media (max-width: 1024px) {
+    .container {
+        width: 75%;
     }
-    .searchBox{
+
+    .searchBox {
         width: 96%;
         gap: 0.5rem;
     }
-    .searchBar{
+
+    .searchBar {
         width: 85%;
         font-size: 1rem;
     }
-    .searchBtn{
+
+    .searchBtn {
         font-size: 1rem;
     }
-    
-    
-    .currWeather{
+
+
+    .currWeather {
         width: 96%;
         padding: 1rem;
         display: grid;
-        grid-template-areas:'c1 c1 .'
-                            'c2 . c3 '
-                            'c2 . c3' ;
+        grid-template-areas: 'c1 c1 .'
+            'c2 . c3 '
+            'c2 . c3';
     }
-    
-    
-    .loc{
+
+
+    .loc {
         font-size: 1.25rem;
         font-weight: 400;
     }
-    
-    .date{
+
+    .date {
         font-size: 1rem;
         font-weight: 300;
     }
 
-    .icoWeather img{
+    .icoWeather img {
         width: 120px;
     }
-    .description{
+
+    .description {
         font-size: 1rem;
         text-align: center;
-    
+
     }
-    
-    .currTemp{
+
+    .currTemp {
         gap: 5px;
         text-align: center;
     }
-    .currTemp h1{
+
+    .currTemp h1 {
         font-size: 6rem;
         font-weight: 200;
     }
-    .currTemp p{
+
+    .currTemp p {
         padding-top: 1rem;
         font-size: 1.5rem;
     }
 
 
-    .weatherInfo{
+    .weatherInfo {
         width: 96%;
         margin: 1rem auto;
         gap: 0.25rem;
     }
-    .card{
+
+    .card {
         background-color: aliceblue;
         min-width: 10rem;
         margin: 0.5rem auto;
         padding: 1rem;
         border-radius: 15px;
     }
-    
-    .cardTitle{
+
+    .cardTitle {
         display: flex;
         justify-content: space-between;
         gap: 1rem;
         font-size: 1rem;
         font-weight: 300;
     }
-    
-    .cardTitle img{
+
+    .cardTitle img {
         width: 1.5rem;
     }
-    .cardValue{
+
+    .cardValue {
         font-size: 1.1rem;
         font-weight: 400;
     }
 }
-@media (max-width: 480px){
-    .container{
-        width: 90%; 
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
     }
-    .searchBox{
+
+    .searchBox {
         width: 96%;
         gap: 0.5rem;
     }
-    .searchBar{
+
+    .searchBar {
         width: 85%;
         font-size: 1rem;
     }
-    .searchBtn{
+
+    .searchBtn {
         font-size: 1rem;
     }
-    
-    
-    .currWeather{
+
+
+    .currWeather {
         width: 96%;
         padding: 1rem;
         display: grid;
-        grid-template-areas:'c1 c1 .'
-                            'c2 . c3'
-                            '. . c3' ;
+        grid-template-areas: 'c1 c1 .'
+            'c2 . c3'
+            '. . c3';
     }
-    
-    
-    .loc{
+
+
+    .loc {
         font-size: 1.25rem;
         font-weight: 400;
     }
-    
-    .date{
+
+    .date {
         font-size: 1rem;
         font-weight: 300;
     }
 
-    .icoWeather img{
+    .icoWeather img {
         width: 100px;
     }
-    .description{
+
+    .description {
         font-size: 1rem;
         text-align: center;
-    
+
     }
-    
-    .currTemp{
+
+    .currTemp {
         gap: 5px;
         text-align: center;
     }
-    .currTemp h1{
+
+    .currTemp h1 {
         font-size: 5rem;
         font-weight: 200;
     }
-    .currTemp p{
+
+    .currTemp p {
         padding-top: 1rem;
         font-size: 1.5rem;
     }
 
 
-    .weatherInfo{
+    .weatherInfo {
         width: 96%;
         margin: 1rem auto;
         gap: 0.25rem;
     }
-    .card{
+
+    .card {
         background-color: aliceblue;
         min-width: 11rem;
         margin: 0.5rem auto;
         padding: 1rem;
         border-radius: 15px;
     }
-    
-    .cardTitle{
+
+    .cardTitle {
         display: flex;
         justify-content: space-between;
         gap: 1rem;
         font-size: 1rem;
         font-weight: 300;
     }
-    
-    .cardTitle img{
+
+    .cardTitle img {
         width: 1.5rem;
     }
-    .cardValue{
+
+    .cardValue {
         font-size: 1.1rem;
         font-weight: 400;
     }
